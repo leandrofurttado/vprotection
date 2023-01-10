@@ -18,6 +18,13 @@ function desconto50($num)
     return $num - $calculo_desconto;
 }
 
+function desconto60($num)
+{
+    $calculo_desconto = 60 * $num / 100;
+    return $num - $calculo_desconto;
+}
+
+
 /**
  * Função calcula o proporcional, referente ao ultimo pagamento até a data do cancelamento.
  * @param float $valor Parametro referente ao valor da mensalidade.
@@ -54,5 +61,6 @@ function info_descontos(float $valor_do_produto)
     echo '<p>Com desconto de 10% ficará R$' . number_format(desconto10($valor_do_produto), 2);
     echo '<p>Com desconto de 20% ficará R$' . number_format(desconto20($valor_do_produto), 2);
     echo '<p>Com desconto de 50% ficará R$' . number_format(desconto50($valor_do_produto), 2);
+    echo '<p>Com desconto de 60% ficará R$' . number_format(desconto60($valor_do_produto), 2);
     echo '<hr>';
 }
