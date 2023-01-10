@@ -21,4 +21,6 @@ if ($_REQUEST["campo1"] = null) {
     $data_boleto_vencido = str_replace('/', '-', $_REQUEST['campo3']);
 
     echo 'O valor do débito a se pagar é: R$' . boleto($valor_parcela, $data_boleto_vencido);
+    echo '<hr>';
+    echo 'Você pode entrar em contato em : 31 4007-2420';
 }
