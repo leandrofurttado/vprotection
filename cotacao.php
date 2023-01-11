@@ -11,11 +11,11 @@
     <hr>
     <fieldset>
         <legend>OPCIONAIS ESCOLHIDOS: </legend>
-        <input type="radio" name="radio" id="radio" value="pr_max_nacional"> <label for="radio">Max Nacional</label>
-        <input type="radio" name="radio" id="radio" value="pr_vidros"> <label for="radio">Vidros</label>
-        <input type="radio" name="radio" id="radio" value="pr_rastreador"> <label for="radio">Rastreador Monitoravel</label>
-        <input type="radio" name="radio" id="radio" value="pr_fenomenos"> <label for="radio">Fenomenos da Natureza</label>
-        <input type="radio" name="radio" id="radio" value="pr_carroreserva"> <label for="radio">Carro reserva(colisão)</label>
+        <input type="radio" name="pr_max_nacional" id="radio" value="pr_max_nacional"> <label for="radio">Max Nacional</label>
+        <input type="radio" name="pr_vidros" id="radio" value="pr_vidros"> <label for="radio">Vidros</label>
+        <input type="radio" name="pr_rastreador" id="radio" value="pr_rastreador"> <label for="radio">Rastreador Monitoravel</label>
+        <input type="radio" name="pr_fenomenos" id="radio" value="pr_fenomenos"> <label for="radio">Fenomenos da Natureza</label>
+        <input type="radio" name="pr_carroreserva" id="radio" value="pr_carroreserva"> <label for="radio">Carro reserva(colisão)</label>
     </fieldset>
     <input type=submit value="COTAR!">
 </form>
@@ -29,7 +29,7 @@ if (empty($_POST['modeloveiculo'])) {
     $ano_modelo = $_POST['radio'];
     $fipe_veiculo = $_POST['fipe'];
     // OPCIONAIS //
-    $max_nacional = $_POST['pr_max_nacional'];
+    $max_nacional = $_POST['opcional_protecao'];
     $vidros = $_POST['pr_vidros'];
     $rastreador = $_POST['pr_rastreador'];
     $fenomeros_natureza = $_POST['pr_fenomenos'];
