@@ -13,6 +13,8 @@
     </form>
 
     <a href="calc_boleto.php" target="_blank">Clique aqui para calcular seu boleto.</a>
+    <hr>
+    <a href="cotacao.php">FAZER COTAÇÃO!</a>
     <?php
 
     require 'sistema/configuracao.php';
